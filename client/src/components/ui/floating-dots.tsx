@@ -15,7 +15,7 @@ export function FloatingDots() {
   useEffect(() => {
     // Create new dots periodically
     const interval = setInterval(() => {
-      if (dots.length < 20) { // Maximum number of dots
+      if (dots.length < 50) { // Maximum number of dots increased to 50
         const newDot: Dot = {
           id: Date.now(),
           x: Math.random() * window.innerWidth,
@@ -25,7 +25,7 @@ export function FloatingDots() {
         };
         setDots(prev => [...prev, newDot]);
       }
-    }, 1000);
+    }, 500); // Decreased interval to 500ms for faster dot generation
 
     // Remove dots after animation
     const cleanup = setInterval(() => {

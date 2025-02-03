@@ -21,7 +21,7 @@ export default function Home() {
           className="absolute text-6xl font-bold text-white z-10"
           style={{
             top: "calc(50% - 96px)", // 1 inch up
-            left: "calc(50% - 48px)", // 1 inch left, then 0.5 inch right (96px - 48px)
+            left: "calc(50% - 72px)", // 1 inch left, then 0.25 inch right (96px - 72px)
           }}
           animate={{
             scale: [1, 1.1, 1],
