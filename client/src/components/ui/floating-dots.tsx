@@ -15,17 +15,17 @@ export function FloatingDots() {
   useEffect(() => {
     // Create new dots periodically
     const interval = setInterval(() => {
-      if (dots.length < 50) { // Maximum number of dots increased to 50
+      if (dots.length < 100) {
         const newDot: Dot = {
           id: Date.now(),
           x: Math.random() * window.innerWidth,
           y: Math.random() * window.innerHeight,
-          scale: Math.random() * 0.5 + 0.5,
-          opacity: Math.random() * 0.5 + 0.3,
+          scale: Math.random() * 1 + 1,
+          opacity: Math.random() * 0.7 + 0.3,
         };
         setDots(prev => [...prev, newDot]);
       }
-    }, 500); // Decreased interval to 500ms for faster dot generation
+    }, 200);
 
     // Remove dots after animation
     const cleanup = setInterval(() => {
@@ -36,18 +36,18 @@ export function FloatingDots() {
       clearInterval(interval);
       clearInterval(cleanup);
     };
-  }, []);
+  }, [dots.length]);
 
   return (
     <div className="fixed inset-0 pointer-events-none">
       {dots.map((dot) => (
         <motion.div
           key={dot.id}
-          className="absolute w-2 h-2 bg-red-500 rounded-full"
+          className="absolute w-3 h-3 bg-red-600 rounded-full shadow-lg shadow-red-500/50"
           initial={{ x: dot.x, y: dot.y, scale: 0, opacity: 0 }}
           animate={{
-            x: dot.x + (Math.random() * 200 - 100),
-            y: dot.y + (Math.random() * 200 - 100),
+            x: dot.x + (Math.random() * 300 - 150),
+            y: dot.y + (Math.random() * 300 - 150),
             scale: dot.scale,
             opacity: [0, dot.opacity, 0],
           }}
