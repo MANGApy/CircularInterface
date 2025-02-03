@@ -1,5 +1,6 @@
 import { CircularButton } from "@/components/ui/circular-button";
 import { FloatingDots } from "@/components/ui/floating-dots";
+import { FloatingSphere } from "@/components/ui/floating-sphere";
 import { motion } from "framer-motion";
 
 const buttons = [
@@ -14,6 +15,7 @@ const buttons = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-black flex items-center justify-center overflow-hidden">
+      <FloatingSphere />
       <FloatingDots />
       <div className="relative w-[600px] h-[600px] max-w-full max-h-full">
         {/* Pulsating Title */}
