@@ -16,7 +16,11 @@ export default function Home() {
       <div className="relative w-[600px] h-[600px] max-w-full max-h-full">
         {/* Pulsating Title */}
         <motion.h1
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl font-bold text-white z-10"
+          className="absolute text-6xl font-bold text-white z-10"
+          style={{
+            top: "calc(50% - 192px)", // 2 inches up
+            left: "calc(50% - 192px)", // 2 inches left
+          }}
           animate={{
             scale: [1, 1.1, 1],
             opacity: [1, 0.8, 1],
