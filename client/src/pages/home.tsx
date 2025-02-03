@@ -60,6 +60,7 @@ export default function Home() {
                 label={button.label}
                 info={button.info}
                 href={button.href}
+                onClick={() => window.location.href = button.href}
               />
             </div>
           );
