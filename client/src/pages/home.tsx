@@ -1,4 +1,5 @@
 import { CircularButton } from "@/components/ui/circular-button";
+import { FloatingDots } from "@/components/ui/floating-dots";
 import { motion } from "framer-motion";
 
 const buttons = [
@@ -12,14 +13,15 @@ const buttons = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
+    <div className="min-h-screen bg-black flex items-center justify-center overflow-hidden">
+      <FloatingDots />
       <div className="relative w-[600px] h-[600px] max-w-full max-h-full">
         {/* Pulsating Title */}
         <motion.h1
           className="absolute text-6xl font-bold text-white z-10"
           style={{
             top: "calc(50% - 96px)", // 1 inch up
-            left: "calc(50% - 96px)", // 1 inch left
+            left: "calc(50% - 48px)", // 1 inch left, then 0.5 inch right (96px - 48px)
           }}
           animate={{
             scale: [1, 1.1, 1],
