@@ -18,8 +18,8 @@ export default function Home() {
         <motion.h1
           className="absolute text-6xl font-bold text-white z-10"
           style={{
-            top: "calc(50% - 192px)", // 2 inches up
-            left: "calc(50% - 192px)", // 2 inches left
+            top: "calc(50% - 96px)", // 1 inch up
+            left: "calc(50% - 96px)", // 1 inch left
           }}
           animate={{
             scale: [1, 1.1, 1],
